@@ -1,0 +1,79 @@
+html {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(238, 174, 202, 0.5),
+    rgba(238, 174, 202, 0.5) 10px,
+    rgba(148, 187, 233, 0.5) 10px,
+    rgba(148, 187, 233, 0.5) 20px
+  );
+  font-family: EB Garamond;
+  font-size: 22px;
+}
+main {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  padding: 30px;
+  padding-bottom: 3px;
+  margin: auto;
+  max-width: 840px;
+}
+header {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(238, 174, 202, 1),
+    rgba(238, 174, 202, 1) 10px,
+    rgba(148, 187, 233, 1) 10px,
+    rgba(148, 187, 233, 1) 20px
+  );
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  padding: 15px;
+}
+footer {
+  text-align: center;
+}
+h1 {
+  color: white;
+  text-shadow: 2px 2px 7px #000;
+  text-align: center;
+}
+
+#container {
+  display: block;
+  margin: auto;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(238, 174, 202, 0.15),
+    rgba(238, 174, 202, 0.15) 10px,
+    rgba(148, 187, 233, 0.15) 10px,
+    rgba(148, 187, 233, 0.15) 20px
+  );
+  border-radius: 20px;
+  min-width: 500px;
+}
+.textstuff {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+#img-div {
+  min-width: 460px;
+  max-width: 700px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#image {
+  max-width: 100%;
+  display: block;
+}
+#img-caption {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  padding: 2px;
+}
