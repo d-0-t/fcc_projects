@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <title>FCC Project - Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1 id="title">FCC Survey Form</h1>
+    </header>
+    <h2>Please fill out this form!</h2>
+    <p id=description>This survey form was made as a submission for freeCodeCamp's projects on Responsive Web Design. You should not take it too seriously, for it's merely just a demonstration of web development skills. It's all fake.</p>
+    <p>So, with all fakeness, please give me your information so I can... I don't know, it's not like I'm going to see any of this. It's just a survey-form. It doesn't actually send the inputs anywhere.</p>
+    <form id="survey-form">
+      <div class="formfield">
+        <label id="name-label" for="name">Your name:</label>
+        <input type="text" id="name" placeholder="My name is..." class="form" required></input>
+      </div>
+      <div class="formfield">
+        <label id="email-label" for="email">Your E-mail address:</label>
+        <input type="email" id="email" placeholder="My E-mail address is..." class="form" required></input>
+      </div>
+      <div class="formfield">
+        <label id="number-label" for="number">Your favorite number (0-100):</label>
+        <input type="number" id="number" min="0" max="100" placeholder="My favorite number is..." class="form" required></input>
+      </div>
+      <div class="formfield">
+        <label id="dropdown-label" for="dropdown">My chromosomes:</label>
+        <select id="dropdown" name="dropdown" class="form" required>
+          <option disabled selected value>Please select:</option>
+          <option value="xx">XX</option>
+          <option value="xy">XY</option>
+          <option value="other">Other</option>
+          <option value="idk">I don't know</option>
+        </select>
+      </div>
+      <div class="formfield">
+        <p id="radiochoice">My favorite pair of chromosomes:</p>
+        <label><input type="radio" name="favxy" value="none" class="radio" checked></input>I don't have a favorite</label>
+        <label><input type="radio" name="favxy" value="xx" class="radio"></input>XX</label>
+        <label><input type="radio" name="favxy" value="xy" class="radio"></input>XY</label>
+        <label><input type="radio" name="favxy" value="other" class="radio"></input>Other</label>
+      </div>
+      <div class="formfield">
+        <p id="checkchoice">Pictures I like: <span class=explain>(multiple choices)</span></p>
+        <label><input type="checkbox" name="favpix" value="cat" class="check"></input>Cat pix</label>
+        <label><input type="checkbox" name="favpix" value="dog" class="check"></input>Dog pix</label>
+        <label><input type="checkbox" name="favpix" value="animal" class="check"></input>Other animals</label>
+        <label><input type="checkbox" name="favpix" value="landscape" class="check"></input>Landscape</label>
+        <label><input type="checkbox" name="favpix" value="portrait" class="check"></input>Portraits</label>
+        <label><input type="checkbox" name="favpix" value="art" class="check"></input>Arts and crafts</label>
+        <label><input type="checkbox" name="favpix" value="monochrome" class="check"></input>Monochrome</label>
+        <label><input type="checkbox" name="favpix" value="colorful" class="check"></input>Colorful</label>
+      </div>
+      <div class="formfield">
+        <p id="aboutyou">Is there anything else you'd like to tell me about yourself?</p>
+        <textarea id="addinfo" class="textarea" name="addinfo" placeholder="Think of something fun!"></textarea>
+      </div>
+      <div class="formfield">
+        <button type="submit" id="submit" class="button">Submit!</button>
+      </div>
+    </form>
+    <footer>For more information about freeCodeCamp and this project, <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form" target="_blank">visit their site</a>.<br>
+      The source of the backgroud image is <a id="tribute-link" href="https://pixabay.com/photos/aurora-northern-lights-1197753/" target="_blank">Pixabay.</a></footer>
+  </main>
+</body>
+
+</html>

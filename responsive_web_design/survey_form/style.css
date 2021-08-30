@@ -1,0 +1,100 @@
+html {
+  background: url(https://cdn.pixabay.com/photo/2016/02/13/12/26/aurora-1197753_960_720.jpg);
+  background-size: cover;
+}
+main {
+  background: linear-gradient(
+    45deg,
+    rgba(238, 174, 202, 0.8) 0%,
+    rgba(148, 187, 233, 0.8) 100%
+  );
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 16px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 800px;
+}
+header,
+footer {
+  color: white;
+  background: rgba(75, 7, 37, 0.25);
+  background-size: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+body {
+  margin: auto;
+}
+a {
+  color: white;
+  font-weight: bold;
+}
+a:hover {
+  color: pink;
+}
+h1 {
+  font-size: 28px;
+}
+label {
+  display: flex;
+}
+.formfield {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label,
+#radiochoice,
+#checkchoice,
+#aboutyou {
+  font-weight: bold;
+}
+.explain {
+  font-size: 12px;
+}
+.form {
+  margin-top: 5px;
+  border-radius: 7px;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  min-width: 75px;
+  max-width: 250px;
+  background: rgba(255, 255, 255, 0.15);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  font-size: 14px;
+}
+.textarea {
+  display: block;
+  width: 100%;
+  height: 30%;
+  min-width: 125px;
+  max-width: 500px;
+  max-height: 250px;
+  padding: 8px;
+}
+.button {
+  background: linear-gradient(
+    -45deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
