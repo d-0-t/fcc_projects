@@ -1,0 +1,365 @@
+@font-face {
+  font-family: Lato;
+  src: url("http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext");
+}
+
+@font-face {
+  font-family: "Brush Script MT";
+  src: url("//db.onlinewebfonts.com/t/33bc06ea126d3ff79886277122f1f510.eot");
+  src: url("//db.onlinewebfonts.com/t/33bc06ea126d3ff79886277122f1f510.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/33bc06ea126d3ff79886277122f1f510.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/33bc06ea126d3ff79886277122f1f510.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/33bc06ea126d3ff79886277122f1f510.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/33bc06ea126d3ff79886277122f1f510.svg#Brush Script MT")
+      format("svg");
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  margin-top: 0px;
+  background: rgb(208, 254, 255);
+  background: linear-gradient(
+    30deg,
+    rgba(208, 254, 255, 1) 0%,
+    rgba(255, 247, 231, 1) 100%
+  );
+  color: #222;
+  text-align: justify;
+}
+
+body {
+  margin: 0px;
+}
+
+main {
+  margin: 0 auto;
+  min-width: 360px;
+}
+
+header {
+  display: block;
+  position: fixed;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+  max-height: 60x;
+  padding: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0 auto;
+  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 653px) {
+  #header {
+    justify-content: center;
+  }
+}
+
+#header-company {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-shadow: 1px 1px 5px #fff;
+}
+
+@media (max-width: 653px) {
+  #header-company {
+    padding-bottom: 0px;
+  }
+}
+
+#header-img {
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  text-shadow: 1px 1px 5px #fff;
+}
+
+#companyname {
+  /*font-family: Brush Script MT;*/
+  font-family: Alex Brush;
+  color: teal;
+  padding: 10px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  min-width: 165px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  padding-top: 7px;
+  flex-direction: row;
+}
+
+@media (min-width: 653px) {
+  #nav-bar {
+    margin-left: auto;
+  }
+}
+
+.nav-link {
+  font-family: Verdana;
+  background-image: linear-gradient(
+    to right,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  margin: 10px;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #fff;
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  background-position: right center;
+  /* change dir */
+  color: #fff;
+}
+
+content {
+  display: block;
+  max-width: 980px;
+  padding: 20px;
+  padding-top: 70px;
+  margin: 0 auto;
+}
+
+@media (max-width: 653px) {
+  content {
+    padding-top: 130px;
+  }
+}
+
+#videocontainer {
+  text-align: center;
+}
+
+h2,
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: teal;
+  padding-top: 0px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#form {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+}
+
+#email {
+  min-width: 200px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.button {
+  background: linear-gradient(
+    45deg,
+    rgba(34, 193, 195, 0.5) 0%,
+    rgba(253, 187, 45, 0.5) 100%
+  );
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.description {
+  display: block;
+  padding-top: 5px;
+  font-family: Arial;
+  font-style: italic;
+  font-size: 14px;
+  color: grey;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 12px;
+  color: grey;
+  background: white;
+}
+
+#about,
+#product,
+#contact {
+  display: none;
+  height: 45px;
+}
+#about:target,
+#product:target,
+#contact:target {
+  display: block !important;
+}
+
+.offerlogo {
+  display: block;
+  background: url(https://cdn.pixabay.com/photo/2017/08/30/13/16/wave-2697053_960_720.jpg);
+  background-size: 530%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-style: solid;
+  border-size: 3px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+#offerlogo1 {
+  background-color: brown;
+  background-blend-mode: screen;
+  border-color: #888;
+}
+#offerlogo2 {
+  background-color: silver;
+  background-blend-mode: screen;
+  border-color: #aaa;
+}
+#offerlogo3 {
+  background-color: gold;
+  background-blend-mode: screen;
+  border-color: #ccc;
+}
+
+#offerboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.offercontainer {
+  display: block;
+  min-width: 100px;
+  max-width: 200px;
+  height: 333px;
+  text-align: center;
+  border-size: 2px;
+  border-color: rgba(0, 128, 157, 0.75); /*teal*/
+  border-style: solid;
+  border-radius: 10px;
+  padding: 15px;
+  padding-right: 20px;
+  padding-top: 30px;
+  -webkit-box-shadow: 4px 5px 3px -3px rgba(0, 0, 0, 0.41);
+  box-shadow: 4px 5px 3px -3px rgba(0, 0, 0, 0.41);
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 10px auto;
+  margin: 10px 10px;
+}
+.offercontainer:hover {
+  border-color: rgba(0, 128, 157, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+.price {
+  font-size: 40px;
+  color: rgb(144, 191, 122);
+}
+.meter {
+  font-size: 26px;
+  font-weight: 900;
+  color: teal;
+}
+.empiric {
+  display: block;
+  color: grey;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.offertext {
+  font-family: Georgia;
+  font-style: italic;
+}
+.select1m {
+  position: relative;
+  bottom: -72px;
+}
+.select10m,
+.select50m {
+  position: relative;
+  bottom: -18px;
+}
+
+#contactcontain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contacttype {
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 50%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.contactlogo {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.contacttext {
+  display: block;
+  padding-top: 5px;
+}
+.contacttype:hover {
+  opacity: 95%;
+}
+h4 {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+}
