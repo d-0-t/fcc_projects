@@ -83,6 +83,8 @@ h2 {
   align-items: center;
 }
 .project-tile {
+  width: 252px;
+  height: 201px;
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
