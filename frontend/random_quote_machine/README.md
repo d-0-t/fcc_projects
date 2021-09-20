@@ -1,2 +1,16 @@
-Vampire Orbituary (Random Quote Machine)
-Created for FCC.
+**Vampire Orbituary** ***(Random Quote Machine)***
+
+This project has been created for freeCodeCamp's FrontEnd course. It uses HTML, CSS, Font Awesome Icons, JS, jQuery, and a JSON file. It fetches new quotes from an array and the result can be tweeted.
+
+
+**Source of the floral element:**
+
+GDJ (Pixabay): https://pixabay.com/vectors/divider-separator-decorative-6279955/
+
+
+
+**The authors of the vampire orbituaries:**
+
+0-5: Albin L J Myhrman
+
+6-7: Endre J Kovács
