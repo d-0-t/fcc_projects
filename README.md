@@ -8,11 +8,11 @@ This repository is covering the freeCodeCamp projects.
 
 ### JavaScript
 
-- Caesar cipher
+- Caesar Cipher
 - Cash Register
-- Palindrome checker
-- Roman numeral converter
-- Telephone number validator (US)
+- Palindrome Checker
+- Roman Numeral Converter
+- Telephone Number Validator (US)
 
 ### Responsive Web Design
 
