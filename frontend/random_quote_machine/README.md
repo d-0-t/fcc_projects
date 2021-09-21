@@ -1,5 +1,7 @@
 **Vampire Orbituary** ***(Random Quote Machine)***
 
+Load webpage on GitHub: https://d-0-t.github.io/fcc_projects/frontend/random_quote_machine/ 
+
 This project has been created for freeCodeCamp's FrontEnd course. It uses HTML, CSS, Font Awesome Icons, JS, jQuery, and a JSON file. It fetches new quotes from an array and the result can be tweeted.
 
 View in codepen: https://codepen.io/d-o-t/pen/xxrjbzo
