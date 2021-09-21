@@ -36,7 +36,7 @@ function getNewQuote() {
   let newQuote = quotes[r];
 
   $("#author").text(newQuote.author).animate({ opacity: 1 }, 750);
-  $("#text").text(newQuote.quote);
+  $("#text").html(newQuote.quote);
   $("#quoteplace").animate({ opacity: 1 }, 2500);
 
   console.log("Fetched r=" + r);
