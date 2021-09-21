@@ -2,6 +2,8 @@
 
 This project has been created for freeCodeCamp's FrontEnd course. It uses HTML, CSS, Font Awesome Icons, JS, jQuery, and a JSON file. It fetches new quotes from an array and the result can be tweeted.
 
+View in codepen: https://codepen.io/d-o-t/pen/xxrjbzo
+
 
 **Source of the floral element:**
 
