@@ -4,7 +4,7 @@ body {
   margin: 0;
   background-image: linear-gradient(0deg, red 0%, black 100%);
   background-attachment: fixed;
-  background: rgb(19,21,22);
+  background: rgb(19, 21, 22);
   color: #edebe8;
   font-size: 20px;
   height: 100%;
@@ -16,17 +16,17 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   min-width: 200px;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
-  -webkit-user-select: none;  
-  -moz-user-select: none;    
-  -ms-user-select: none;      
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -34,35 +34,34 @@ body {
   position: absolute;
   z-index: -1;
   height: 500px;
-  filter: invert(21%) sepia(100%) saturate(6828%) hue-rotate(358deg) brightness(102%) contrast(112%);
+  filter: invert(21%) sepia(100%) saturate(6828%) hue-rotate(358deg)
+    brightness(102%) contrast(112%);
   opacity: 0.5;
 }
 
 #pagetitle {
   display: block;
   position: relative;
-  font-family: 'MedievalSharp';
+  font-family: "MedievalSharp";
   font-size: 40px;
   font-weight: bold;
   /*color: #fff;*/
   color: rgb(13 15 16);
   bottom: -8px;
   z-index: 2;
-  text-shadow:  2px 2px 1px #ff0000,
-                1px 1px 1px #ff0000;
+  text-shadow: 2px 2px 1px #ff0000, 1px 1px 1px #ff0000;
   transition: text-shadow 0.5s ease-in-out;
 }
 #pagetitle:hover {
-  text-shadow:  2px 2px 3px #ff0000,
-                1px 1px 3px #ff0000;
+  text-shadow: 2px 2px 3px #ff0000, 1px 1px 3px #ff0000;
 }
 
 #quote-box {
   display: block;
   position: relative;
   padding: 10px;
-  background-color: rgba(19,21,22,0.85);
-  border: 12px solid rgba(0,0,0,0.1);
+  background-color: rgba(19, 21, 22, 0.85);
+  border: 12px solid rgba(0, 0, 0, 0.1);
   outline: 1px solid red;
   max-width: 500px;
   margin: 0px 50px 0px 50px;
@@ -70,9 +69,9 @@ body {
 
 hr {
   border: 0px;
-  border-top: 5px dotted rgba(173,166,154,0.5);
+  border-top: 5px dotted rgba(173, 166, 154, 0.5);
   width: 93%;
-  background: rgba(198,0,0,0)
+  background: rgba(198, 0, 0, 0);
 }
 
 #author {
@@ -86,7 +85,8 @@ hr {
   font-size: 30px;
 }
 
-#author, #quoteplace {
+#author,
+#quoteplace {
   transition: color 1s ease-in-out;
 }
 #author:hover {
@@ -112,7 +112,7 @@ button {
   margin: 10px;
   height: 40px;
   background: #131516;
-  color: rgb(153,144,129);
+  color: rgb(153, 144, 129);
   border-color: #726a5c;
   font-weight: bold;
   transition: background 0.75s ease-in-out;
@@ -129,10 +129,10 @@ footer > a {
   display: block;
   postition: relative;
   padding-top: 5px;
-  color: rgb(237,235,232);
+  color: rgb(237, 235, 232);
   text-decoration: none;
   opacity: 0.666;
-  transition: opacity 0.5s ease-in-out
+  transition: opacity 0.5s ease-in-out;
 }
 
 footer > a:hover {
