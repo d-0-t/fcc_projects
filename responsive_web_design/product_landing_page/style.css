@@ -164,6 +164,9 @@ content {
 #videocontainer {
   text-align: center;
 }
+#video {
+  max-width: 100%;
+}
 
 h2,
 h3 {
