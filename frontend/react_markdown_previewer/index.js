@@ -1,16 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+/*const projectName = 'md-preview';*/
 
 import './index.css';
-import marked from "marked";
 
+import React from "https://cdn.skypack.dev/react";
+import ReactDOM from "https://cdn.skypack.dev/react-dom";
+import marked from "https://cdn.skypack.dev/marked";
 import {
   ReflexContainer,
   ReflexElement
-} from 'react-reflex';
-import 'react-reflex/styles.css';
+} from "https://cdn.skypack.dev/react-reflex";
 
-/*const projectName = 'md-preview';*/
 
 class App extends React.Component {
   constructor(props) {
