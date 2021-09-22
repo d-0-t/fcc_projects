@@ -1,0 +1,95 @@
+body,html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(49, 48, 61);
+  color: rgb(177, 177, 177);
+  font-size: 16px;
+  font-family: Roboto Mono;
+  overflow-x: hidden;
+  height: 100vh;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 10vh;
+  border-bottom: 2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+}
+#header > h1 {
+  margin: 0;
+  font-size: 100%;
+}
+#profile > a:hover {
+  color: #fff;
+}
+#profile > a {
+  text-decoration: none;
+  color:rgb(190, 190, 190);
+}
+
+textarea {
+  display: block;
+  flex: 1;
+  background-color: rgb(31, 31, 37);
+  color: rgb(189, 189, 189);
+  font-size: 16px;
+  border: 0px;
+  padding: 25px;
+  padding-bottom: 0px;
+}
+#holdme {
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 90vh;
+}
+#preview {
+  border:1px solid rgb(177, 177, 177);
+  background-color: rgb(146, 145, 155);
+  color: black;
+  padding: 25px;
+  overflow-y: scroll;
+  height: 90vh;
+}
+.full-screen-div {
+  width: 100vw;
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+img {
+  width: 200px;
+}
+
+td, th {
+  border: 2px solid rgb(75, 74, 87);
+  padding: 7px;
+}
+table {
+  border-collapse:collapse;
+}
+
+.disableSelection {
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
