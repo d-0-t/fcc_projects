@@ -10,12 +10,14 @@ html {
   font-size: 22px;
 }
 main {
+  display: block;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 50px;
   padding: 30px;
   padding-bottom: 3px;
   margin: auto;
   max-width: 840px;
+  min-width: 360px;
 }
 header {
   background: repeating-linear-gradient(
@@ -27,8 +29,8 @@ header {
   );
   border-radius: 20px;
   display: block;
-  margin: auto;
   padding: 15px;
+  max-width: 100%;
 }
 footer {
   text-align: center;
@@ -50,7 +52,8 @@ h1 {
     rgba(148, 187, 233, 0.15) 20px
   );
   border-radius: 20px;
-  min-width: 500px;
+  max-width: 100%;
+  min-width: 300px;
 }
 .textstuff {
   padding-left: 20px;
@@ -59,8 +62,8 @@ h1 {
   padding-bottom: 7px;
 }
 #img-div {
-  min-width: 460px;
-  max-width: 700px;
+  min-width: 100px;
+  max-width: 100%;
   display: block;
   margin: auto;
   padding: 20px;
