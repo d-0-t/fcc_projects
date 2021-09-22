@@ -1,5 +1,6 @@
 /*const projectName = 'md-preview';*/
 
+/*CodePen.io compatibility import*/
 import './index.css';
 
 import React from "https://cdn.skypack.dev/react";
@@ -10,6 +11,18 @@ import {
   ReflexElement
 } from "https://cdn.skypack.dev/react-reflex";
 
+/* CREATE-REACT-APP VSC IMPORT AFTER NPM DEPENDENCIES
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import './index.css';
+import marked from "marked";
+
+import {
+  ReflexContainer,
+  ReflexElement
+} from 'react-reflex';
+import 'react-reflex/styles.css';*/
 
 class App extends React.Component {
   constructor(props) {
