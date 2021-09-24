@@ -1,4 +1,4 @@
-**Vampire Orbituary** ***(Random Quote Machine)***
+# Vampire Orbituary (Random Quote Machine)
 
 Load webpage on GitHub: https://d-0-t.github.io/fcc_projects/frontend/random_quote_machine/ 
 
