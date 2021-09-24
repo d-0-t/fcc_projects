@@ -1,0 +1,94 @@
+body, html {
+  margin: 0;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: white;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+#titletext {
+  position: absolute;
+  font-size: 2.5rem;
+  font-family: Dancing Script;
+  top: -35px;
+  text-shadow:  2px 2px 2px rgb(80, 70, 165),
+                4px 4px 2px rgb(80, 70, 165),
+                6px 6px 1px rgb(80, 70, 165);
+  transition: color 1s, text-shadow 1s;
+}
+#titletext:hover {
+  color:rgb(124, 115, 207);
+  text-shadow:  2px 2px 2px #000,
+                4px 4px 2px #000,
+                6px 6px 1px #000;
+}
+
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin: 0;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 300px;
+  background: rgb(7,4,42);
+  background: linear-gradient(45deg, rgba(7,4,42,1) 0%, rgba(33,40,69,1) 100%);
+  border-radius: 20px;
+  border: 3px solid rgb(80, 70, 165);
+}
+
+#display {
+  display: block;
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid white;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#pads {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+.drum-pad {
+  flex: 0 0 30%;
+  background-color: rgba(0,0,0,0.3);
+  border: 1px solid white;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 66px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px rgb(80, 70, 165),
+               2px 2px 5px rgb(80, 70, 165);
+  transition: border-radius 0.25s;
+}
+.drum-pad:hover, .drum-pad:active {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 10%;
+}
+.dp2 {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 10%;
+}
+
+.disable-select {
+  user-select: none;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none; 
+}
