@@ -111,27 +111,28 @@ document.addEventListener('keydown', logKey);
 
 let x = 0;
 function logKey(e) {
-  if (e.keyCode === 81) { x = 0 }       //Q
-  else if (e.keyCode === 87) { x = 1 }  //W
-  else if (e.keyCode === 69) { x = 2 }  //E
-  else if (e.keyCode === 65) { x = 3 }  //A
-  else if (e.keyCode === 83) { x = 4 }  //S
-  else if (e.keyCode === 68) { x = 5 }  //D
-  else if (e.keyCode === 90) { x = 6 }  //Z
-  else if (e.keyCode === 88) { x = 7 }  //X
-  else if (e.keyCode === 67) { x = 8 }  //C
-  else { return 0 }
+  switch(e.keyCode) {
+    case 81: x = 0; break;  //Q
+    case 87: x = 1; break;  //W
+    case 69: x = 2; break;  //E
+    case 65: x = 3; break;  //A
+    case 83: x = 4; break;  //S
+    case 68: x = 5; break;  //D
+    case 90: x = 6; break;  //Z
+    case 88: x = 7; break;  //X
+    case 67: x = 8; break;  //C
+    default: break;
+  }
   keyPress(x);
 }
 
 function keyPress(x) {
   document.getElementById(soundArray[x].id.toUpperCase()).play();
-  document.getElementById("display").innerHTML =  soundArray[x].name;
-
+  document.getElementById("display").innerHTML = soundArray[x].name;
   document.getElementById(soundArray[x].id).classList.add("dp2");
   setTimeout(function() {
     document.getElementById(soundArray[x].id).classList.remove("dp2");
-}, 250);
+  }, 250);
 }
 
 export default App;
