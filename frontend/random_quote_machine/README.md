@@ -15,6 +15,5 @@ GDJ (Pixabay): https://pixabay.com/vectors/divider-separator-decorative-6279955/
 
 **The authors of the vampire orbituaries:**
 
-0-6: Albin L J Myhrman
-
+0-6: Albin L J Myhrman  
 7-8: Endre J Kovács
