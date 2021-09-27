@@ -8,13 +8,11 @@ import './index.css';
 const operas = /[-+*/]/;
 //invalid operators to begin an expression with
 const operaStartInvalid = /^[*/]/;
-
 //handling minus as a different operator in the else if conditions
 const operaAfterNum = /[0-9][+*/]$/;
 const operaMinusAfterNum = /[0-9][-]$/;
 //when there is an +*/ following a -, the operators should be deleted and replaced by the new operator
 const operaOverride = /[+*/][-]$/;
-
 //if expression ending with operators
 const operaEnd = /[-+*/]$/
 //ending with numbers
@@ -25,10 +23,15 @@ const doubleZero = /[-+*/][0]$/;
 const zeroStart = /^[0]$/;
 //check previous state for validity (last number group), whether it already has a decimal
 const deciCheck = /[-+*/]*[0-9]*[.][0-9]*$/;    
-//check if expression starts with decimal
+//check if expression starts / ends with decimal
 const deciStart = /^[.]/;
+const deciEnd = /[.]$/;
+const deciZeroEnd = /[0][.]$/;
 //check if it ends with operator + decimal
 const deciAndOperaEnd = /[-+*/][.]$/;
+const deciAndTwoOperasEnd = /[-+*/][-+*/]+[.]$/;
+const equalEnd = /[=]$/;
+const operaStart = /^[*/]/;
 
 class App extends React.Component {
   constructor(props) {
@@ -41,13 +44,49 @@ class App extends React.Component {
 
   handleClick(num) {
     this.setState(prevState => {
-      if (this.state.displayed == "Infinity" || !this.state.displayed) { 
+      if (this.state.displayed == "Infinity" || this.state.displayed == "-Infinity" || !this.state.displayed /* = NaN */ ) { 
+        if (operaStart.test(num)) {
+          return {
+            displayed: "0"
+          }
+        } else {
+          return {
+            displayed: num
+          }
+        }
+      } else if (deciEnd.test(this.state.displayed) && num === ".") {
         return {
-          displayed: num
+          displayed: this.state.displayed.slice(0,-1)
         }
       } else if (deciAndOperaEnd.test(this.state.displayed)) {
+        if (num !== "=") {
+          return {
+            displayed: this.state.displayed.slice(0,-1) + "0." + num
+          }
+        } else {
+          if (deciAndTwoOperasEnd.test(this.state.displayed)) {
+            return {
+              displayed: Math.floor(10000000000000*eval(this.state.displayed.slice(0,-3)))/10000000000000
+            }
+          } else {
+            return {
+              displayed: Math.floor(10000000000000*eval(this.state.displayed.slice(0,-2)))/10000000000000
+            }
+          }
+        }
+      } else if (this.state.displayed === "AC" || this.state.displayed === "=" || this.state.displayed === ".") {
+        if (num === "0" || num === "AC" || num === "=") {
+          return {
+            displayed: "0"
+          }
+        } else if (numbers.test(num)) {
+            return {
+              displayed: num
+            }
+        }
+      } else if (equalEnd.test(this.state.displayed)) {
         return {
-          displayed: eval(this.state.displayed.slice(0,-2))
+          displayed: this.state.displayed.slice(0,-1) + num
         }
       } else if (num === "AC") {
         return {
@@ -56,16 +95,16 @@ class App extends React.Component {
       } else if (num === "=") {
         if (operaOverride.test(this.state.displayed)) {
           return {
-            displayed: eval(this.state.displayed.slice(0,-2))
+            displayed: Math.floor(10000000000000*eval(this.state.displayed.slice(0,-2)))/10000000000000
           }
-        } else if (operaEnd.test(this.state.displayed)) {
+        } else if (operaEnd.test(this.state.displayed) || deciEnd.test(this.state.displayed)) {
           return {
-            displayed: eval(this.state.displayed.slice(0,-1))
+            displayed: Math.floor(10000000000000*eval(this.state.displayed.slice(0,-1)))/10000000000000
           }
         }
         else {
           return {
-            displayed: eval(this.state.displayed)
+            displayed: Math.floor(10000000000000*eval(this.state.displayed))/10000000000000
           }
         }
       } else if (numbers.test(num)) {
