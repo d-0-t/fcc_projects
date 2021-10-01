@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+
+body, html {
+  margin: 0;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: rgb(202, 202, 202);
+  font-family: monospace;
+  font-size: 24px;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin: 0;
+  padding: 30px;
+  padding-top: 10px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 410px;
+  background: rgb(36, 36, 36);
+  background: linear-gradient(60deg, rgb(19, 19, 19) 0%, rgb(48, 48, 48) 100%);
+  border-radius: 10px;
+  border: 1px solid rgb(58, 58, 58);
+}
+
+#setup {
+  font-family: monospace;
+  display: flex;
+  padding: 25px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ccc;
+}
+
+#pagetitle {
+  font-size: 48px;
+  font-family: Orbitron;
+  font-weight: 800;
+  top: 5px;
+  left: 5px;
+  text-shadow:  2px 2px 2px rgb(0, 0, 0);
+  padding: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#signature {
+  position: absolute;
+  bottom: 3px;
+  font-size: 16px;
+}
+#signature > a {
+  text-decoration: none;
+  color: rgb(136, 136, 136);
+}
+#signature > a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+#break, #session, #timer, .adjustgroup {
+  display: flex;
+  flex-direction: column;
+}
+.adjustgroup {
+  margin-top: 5px;
+}
+#break-label {
+  padding-left: 17px;
+}
+.smolblock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+}
+#break-length, #session-length {
+  font-size: 38px;
+  font-family: Digital-7;
+  font-family: Digital;
+  background-color: rgb(118, 119, 106);
+  background: linear-gradient(45deg, rgb(118, 119, 106) 0%, rgb(82, 81, 70) 100%);
+  color: black;
+  border: 2px solid rgb(53, 53, 53);
+  border-radius: 20px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#timerdisplay {
+  font-family: Digital-7;
+  font-family: Digital;
+  font-size: 32px;
+  display: flex;
+  background-color: rgb(118, 119, 106);
+  background: linear-gradient(45deg, rgb(118, 119, 106) 0%, rgb(82, 81, 70) 100%);
+  color: black;
+  border: 2px solid rgb(53, 53, 53);
+  width: 150px;
+  height: 75px;
+  padding: 10px;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  flex-direction: column;
+}
+#time-left {
+  font-size: 50px;
+  padding-top: 3px;
+}
+button {
+  font-family: monospace;
+  color: rgb(224, 224, 224);
+  font-size: 24px;
+  background-color: rgb(99, 99, 99);
+  background: linear-gradient(45deg, rgb(58, 58, 58) 0%, rgb(99, 99, 99) 100%);
+  border: 1px solid rgb(20, 20, 20);
+  line-height: 40px;
+  border-radius: 4px;
+  margin: 6px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: normal;
+}
+button:hover {
+  background: rgb(66, 66, 66);
+  background: linear-gradient(45deg, rgb(44, 44, 44) 0%, rgb(77, 77, 77) 100%);
+  border: 1px solid rgb(65, 65, 65);
+}
+.adjuster {
+  display: flex;
+  width: 25px;
+  height: 20px;
+  padding: auto;
+  margin-top: 0;
+  margin-bottom: 3px;
+  align-items: center;
+  justify-items: center;
+  border-radius: 3px;
+}
+#functionbuttons {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+#start_stop {
+  width: 70px;
+  height: 50px;
+  border-radius: 5px;
+}
+#reset {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#start_stop, #reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#start_stop > i, #time-left > i {
+  margin: 2px;
+}
+
+.disable-select {
+  user-select: none;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none; 
+}
