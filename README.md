@@ -8,13 +8,14 @@ This repository is covering the freeCodeCamp projects.
 - [[Demo]](https://codepen.io/d-o-t/full/RwgJyOP) React Markdown Previewer
 - [[Demo]](https://codepen.io/d-o-t/full/jOwebed) Minimalistic Purple Drum Machine
 - [[Demo]](https://codepen.io/d-o-t/full/OJgagZj) JavaScript Calculator
+- [[Demo]](https://codepen.io/d-o-t/full/oNwJqer) 25 + 5 Clock
 
 ### JavaScript
 
 - Caesar Cipher
 - Cash Register
 - Palindrome Checker
-- Roman Numeral Converter
+- [[Demo]](https://codepen.io/d-o-t/full/OJgdYvr) Roman Numeral Converter
 - Telephone Number Validator (US)
 
 ### Responsive Web Design
