@@ -1,0 +1,197 @@
+/* vietnamese */
+@font-face {
+  font-family: 'Gideon Roman';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/gideonroman/v1/e3tmeuGrVOys8sxzZgWlmXoQc0nXkvc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Gideon Roman';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/gideonroman/v1/e3tmeuGrVOys8sxzZgWlmXoQcknXkvc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gideon Roman';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/gideonroman/v1/e3tmeuGrVOys8sxzZgWlmXoQfEnX.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body, html {
+  margin: 0;
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: rgb(202, 202, 202);
+  font-family: Gideon Roman;
+  font-weight: bold;
+  font-size: 24px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #1b1b1b 0%, rgb(0, 0, 0) 100%);
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 100%;
+  max-width: 475px;
+  max-height: 746px;
+  min-width: 345px;
+  min-height: 400px;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+#pagetitle {
+  display: block;
+  position: absolute;
+  top: -6%;
+  left: 17%;
+  font-size: 28px;
+  z-index: 3;
+  text-align: center;
+  color: rgb(207, 207, 207);
+  text-shadow: 3px 3px 3px #000000;
+  transition: color 1s linear;
+}
+#pagetitle:hover {
+  color: #ffffff;
+}
+#venus {
+  position: absolute;
+  right: 10%;
+  filter: invert(100%);
+  max-height: 85%;
+  bottom: 10px;
+  z-index: -1;
+  opacity: 0.8;
+}
+#resultblock {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 50px;
+  padding: 25px;
+  font-size: 3.8vh;
+  top: 5%;
+  left: 10%;
+  height: 90%;
+  z-index: 1;
+  border: 1px solid rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0.6) 50%, rgba(82, 82, 82, 0.25) 100%);
+  text-shadow: 3px 3px 3px #000000;
+  transition: color 1s linear;
+}
+#resultblock:hover {
+  color: #ffffff;
+}
+#questionblock {
+  position: absolute;
+  right: 0.5%;
+  top: 7%;
+  color: #fff;
+}
+#ask-btn {
+  display: block;
+  position: absolute;
+  background: radial-gradient(rgb(58, 58, 58) 0%, rgb(30,30,30) 70%);
+  color: #ffffff;
+  font-family: Gideon Roman;
+  font-size: 42px;
+  left: -32px;
+  top: 35px;
+  width: 60px;
+  height: 60px;
+  text-shadow: 3px 3px 3px #000000;
+  border-radius: 100%;
+  z-index: 2;
+  border: 1px solid rgb(255, 255, 255);
+  transition: color 0.3s linear;
+}
+#ask-btn:hover {
+  color: #bebebe;
+}
+#question {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  font-family: Gideon Roman;
+  font-size: 28px;
+  background-color: rgba(22, 22, 22, 0.25);
+  border: 1px solid #969696;
+  height: 75px;
+  width: 125px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s linear;
+}
+#question:hover {
+  background-color: rgba(196, 196, 196, 0.15);
+}
+#asker {
+  background: #000000;
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+#instructions {
+  display: block;
+  position: absolute;
+  right: 2%;
+  top: 87px;
+  font-size: 16px;
+  z-index: 3;
+  text-align: center;
+  color: #b3b3b3;
+  z-index: 0;
+}
+
+#signature {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#signature > a {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+  transition: color 0.5s linear;
+}
+#signature > a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.disable-select {
+  user-select: none;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none; 
+}
