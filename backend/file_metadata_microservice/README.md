@@ -1,6 +1,6 @@
 # File Metadata Microservice
 
-[[DEMO]](https://file-metadata-microservice.d-0-t.repl.co/)
+- [[DEMO]](https://replit.com/@d-0-t/File-Metadata-Microservice)
 
 This project was made for freeCodeCamp's Back End course.
 
