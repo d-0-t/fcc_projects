@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Metric/Imperial Converter</title>
+    <meta name="description" content="Metric/Imperial Converter Project based on the freeCodeCamp Quality Assurance curriculum">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./public/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Metric/Imperial Converter</h1>
+    </header>
+    <section>
+      <div id='testui' >
+        <h3 id="uititle">Front-End</h3>
+        <form id="convertForm" class="border">
+          <input type="text" id="convertField" name="input" placeholder="3.1mi" style="width: 200px">
+          <input id="convert" type="submit" value='Convert!'>
+        </form>
+        <p id='result'></p>
+        <code id='jsonResult'></code>
+      </div>
+    </section>
+    <section id="description">
+      <h3>Description</h3>
+      <p>This simple app will convert between a few metric/imperial units and will return a string with the answer, as well as a JSON object containing the detailed result.</p>
+      <p>The valid input contains no spaces and no special characters, only uses the defined units. The numbers can be integers and simple fractions.</p>
+        <listsblock>
+          <article>
+            <h4>Valid input characters</h4>
+            <ul>
+              <li>Numbers 0-9,</li>
+              <li>dot (.) for decimals,</li>
+              <li>slash (/) for fractions,</li>
+              <li>letters for units.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Valid unit inputs:</h4>
+            <ul>
+              <li>L, gal</li>
+              <li>km, mi</li>
+              <li>kg, lbs</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Valid number inputs:</h4>
+            <ul>
+              <li><b>Integers:</b> 2, 13, 42, ...</li>
+              <li><b>Decimals:</b> 2.5, 1.33333, ...</li>
+              <li><b>Fractions:</b> 2/5, 2.5/6, 2.5/10.3, ...</li>
+            </ul>
+          </article>
+        </listsblock>
+      </div>
+    </section>
+    <section id="examples">
+      <div class="example">
+        <h3>Example usage</h3>
+        <codeblock>
+          <code>/api/convert?input=4gal</code><br>
+          <code>/api/convert?input=1/2km</code><br>
+          <code>/api/convert?input=5.4/3lbs</code><br>
+          <code>/api/convert?input=kg</code><br>
+        </codeblock>
+      </div>
+      <div class="example">
+        <h3>Example return</h3>
+        <codeblock>
+          <code>{ initNum: 3.1, initUnit: 'mi', returnNum: 4.98895, returnUnit: 'km', string: '3.1 miles converts to 4.98895 kilometers' }</code>
+        </codeblock>
+      </div>
+    </section>
+    <hr>
+    <div id="footer">
+        <p><br/>
+        This project has been written by <a href="https://github.com/d-0-t" target="_blank" rel="noreferrer"><b>d0t</b></a> for <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp.org</a>'s Back End course.
+      </p>
+    </div>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        $('#convertForm').submit(function(event) {
+          event.preventDefault();
+          $.ajax({
+            url: '/api/convert',
+            type: 'get',
+            data: $('#convertForm').serialize(),
+            success: function(data) {
+              $('#result').text(data.string || data);
+              $('#jsonResult').text(JSON.stringify(data));
+            }
+          });
+        });
+      });
+   </script>
+  </body>
+</html>
