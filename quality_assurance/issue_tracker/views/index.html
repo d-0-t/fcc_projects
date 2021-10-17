@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Issue Tracker</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Issue Tracker
+      </h1>
+    </header>
+    <center><section id='testui'>
+      <h2>API Tests</h2>
+      <p>Go to thisurl/{anyProjectName} to access a functional project, like:<br>
+        <a class="boldlink" href="/test">"thisurl".com/test</a> or <a class="boldlink" href="/apitest">"thisurl".com/apitest</a>, etc...
+      </p>
+      <p>Access example JSON (you can do query as seen in example): <a class="boldlink" href="/api/issues/apitest">"thisurl".com/api/issues/apitest</a></p>
+      <div id="apitests">
+        <div id="subdel">
+        <div class="apitest" id="col1">
+          <h3>Submit issue on <i>apitest</i></h3>
+          <form id="testForm" class="border">
+            <input class="field" type="text" name="issue_title" placeholder="*Title" required=''><br>
+            <textarea id="subtf" class="textfield" type="text" name="issue_text" placeholder="*Text" required=''></textarea><br>
+            <input class="field" type="text" name="created_by" placeholder="*Created by" required=''><br>
+            <input class="field" type="text" name="assigned_to" placeholder="(opt)Assigned to"><br>
+            <input class="field" type="text" name="status_text" placeholder="(opt)Status text"><br>
+            <button class="butt" type="submit">Submit Issue</button>
+          </form><br>
+        </div>
+        <div class="apitest">
+          <h3>Delete issue on <i>apitest</i></h3>
+          <form id="testForm3" class="border">
+            <input class="field" type="text" name="_id" placeholder="_id" required=''><br>
+            <button class="butt" type="submit">Delete Issue</button>
+          </form>
+        </div>
+        </div>
+        <div class="apitest">
+          <h3>Update issue on <i>apitest</i> (Change any or all to update issue on the _id supplied)</h3>
+          <form id="testForm2" class="border">
+            <input class="field" type="text" name="_id" placeholder="*_id"required=''><br>
+            <input class="field" type="text" name="issue_title" placeholder="(opt)Title"><br>
+            <textarea id="uptf" class="textfield" type="text" name="issue_text" placeholder="(opt)Text"></textarea><br>
+            <input class="field" type="text" name="created_by" placeholder="(opt)Created by"><br>
+            <input class="field" type="text" name="assigned_to" placeholder="(opt)Assigned to"><br>
+            <input class="field" type="text" name="status_text" placeholder="(opt)Status text"><br>
+            <label><input type="checkbox" name="open" value="false"> Check to close issue</label><br>
+            <button class="butt" type="submit">Update Issue</button>
+          </form><br>
+        </div>
+      </div>
+      <code id='jsonResult'></code>
+    </section></center>
+    <div id="examples">
+      <div class="example">
+        <h3>Examples</h3>
+      Go to <a href='/api/issues/apitest/'><code>/api/issues/apitest/</code></a>  project<br><br>
+        <h3>Example <code>GET</code> usage</h3>
+        <codeblock>
+          <code>
+            /api/issues/{project}<br><br>
+            /api/issues/{project}?open=true&amp;assigned_to=Joe
+          </code>
+        </codeblock>
+      </div>
+      <div class="example">
+        <h3>Example return</h3>
+        <codeblock>
+          <code>[{ <br>
+              "_id": "5871dda29faedc3491ff93bb",<br>
+              "issue_title": "Fix error in posting data",<br>
+              "issue_text": "When we post data it has an error.",<br>
+              "created_on": "2017-01-08T06:35:14.240Z",<br>
+              "updated_on": "2017-01-08T06:35:14.240Z",<br>
+              "created_by": "Joe",<br>
+              "assigned_to": "Joe",<br>
+              "open": true,<br>
+              "status_text": "In QA"<br>
+              },...]
+          </code>
+        </codeblock>
+      </div>
+    </div>
+    <hr>
+    <div id="footer">
+      <p><br/>
+      This project has been written by <a href="https://github.com/d-0-t" target="_blank" rel="noreferrer"><b>d0t</b></a> for <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp.org</a>'s Back End course.
+    </p>
+  </div>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        $('#testForm').submit(function(e) {
+          $.ajax({
+            url: '/api/issues/apitest',
+            type: 'post',
+            data: $('#testForm').serialize(),
+            success: function(data) {
+              $('#jsonResult').text(JSON.stringify(data));
+            }
+          });
+          e.preventDefault();
+        });
+        $('#testForm2').submit(function(e) {
+          $.ajax({
+            url: '/api/issues/apitest',
+            type: 'put',
+            data: $('#testForm2').serialize(),
+            success: function(data) {
+              $('#jsonResult').text(JSON.stringify(data));
+            }
+          });
+          e.preventDefault();
+        });
+        $('#testForm3').submit(function(e) {
+          $.ajax({
+            url: '/api/issues/apitest',
+            type: 'delete',
+            data: $('#testForm3').serialize(),
+            success: function(data) {
+              $('#jsonResult').text(JSON.stringify(data));
+            }
+          });
+          e.preventDefault();
+        });
+      });
+   </script>
+  </body>
+</html>
