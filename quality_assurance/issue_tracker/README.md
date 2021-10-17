@@ -14,8 +14,11 @@ Access example JSON (you can do query as seen in example):
 - ["thisurl".com/api/issues/apitest](https://issue-tracker.d-0-t.repl.co/api/issues/apitest)
 
 GET usage:
+
     /api/issues/{project}
+
     /api/issues/{project}?open=true&assigned_to=Joe
+
 
 Return: a JSON object in the bottom.
 
