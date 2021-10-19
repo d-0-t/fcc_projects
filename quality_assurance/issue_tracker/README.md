@@ -22,7 +22,30 @@ GET usage:
 
 Return: a JSON object in the bottom.
 
-## Disclaimer - TESTING
+## My work
+### My code
+- routes/api.js
+- tests/2_functional-tests.js
+- mongodb-setup.js
+- public/style.css (heavily modified)
+- views/index.html (heavily modified)
+- views/issues.html (heavily modified)
+
+The rest was supplied by the fcc boilerplate.
+
+### Problem solving - 2_functional-tests.js
+- Two of the paths for testing had to be secret for security reasons (paths are stored in .env), to ensure the tests don't fail
+- Test / mongodb async issues
+  - The testing does not work well with mongo. Syncing attempts failed.
+    - The save() function checks for document version and throws an error upon the inhumanly fast PUT request in the test.
+    - The alternative update() function which disregards the version still failed because mongo's auto-generated ID can't be removed from the acquired object, and update() refuses to push ID.
+    - This issue obviously does not affect normal use.
+  - To fix this I set up a different path for PUT requests with fixed IDs. 
+- Getting the ID of some document to delete
+  - Done with assigning id to a variable inside Promise.resolve() upon the test's first POST request.
+  - The last section of tests will delete this entry from the database.
+
+#### DISCLAIMER - Testing
 
 I disabled the running tests on Replit because cloudfare(?) thinks it's an attack and it keeps crashing the app. Works beautifully & fast when run without a 3rd party. I had the same issue with other projects, but this one was the most difficult regarding this problem. There does not seem to be a solution other than hosting it somewhere else, which I cannot do. I guess I got incredibly lucky that it decided to not crash on me ONCE when I was submitting to fcc... Sadly I am not alone with this problem, so many others have been complaining about it. I have not tried hosting it on Glitch yet.
 
