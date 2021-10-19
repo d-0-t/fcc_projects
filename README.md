@@ -4,17 +4,17 @@ This repository is covering the freeCodeCamp projects.
 
 ### Quality Assurance (backend + testing)
 
-- [[DEMO]](https://replit.com/@d-0-t/Issue-Tracker) Issue Tracker
-- [[DEMO]](https://replit.com/@d-0-t/American-British-Translator) British-American Translator
-- [[DEMO]](https://replit.com/@d-0-t/MetricImperial-Converter) Metric/Imperial Converter
+- [[Demo]](https://replit.com/@d-0-t/Issue-Tracker) Issue Tracker
+- [[Demo]](https://replit.com/@d-0-t/American-British-Translator) British-American Translator
+- [[Demo]](https://replit.com/@d-0-t/MetricImperial-Converter) Metric/Imperial Converter
 
 ### BackEnd
 
-- [[DEMO]](https://replit.com/@d-0-t/Exercise-Tracker) Exercise tracker
-- [[DEMO]](https://replit.com/@d-0-t/File-Metadata-Microservice) File Metadata Microservice
-- [[DEMO]](https://replit.com/@d-0-t/Request-Header-Parser-Microservice) Request Header Parser
-- [[DEMO]](https://replit.com/@d-0-t/Timestamp-Microservice) Timestamp Microservice
-- [[DEMO]](https://replit.com/@d-0-t/URL-Shortener) URL Shortener
+- [[Demo]](https://replit.com/@d-0-t/Exercise-Tracker) Exercise tracker
+- [[Demo]](https://replit.com/@d-0-t/File-Metadata-Microservice) File Metadata Microservice
+- [[Demo]](https://replit.com/@d-0-t/Request-Header-Parser-Microservice) Request Header Parser
+- [[Demo]](https://replit.com/@d-0-t/Timestamp-Microservice) Timestamp Microservice
+- [[Demo]](https://replit.com/@d-0-t/URL-Shortener) URL Shortener
 
 ### FrontEnd
 
