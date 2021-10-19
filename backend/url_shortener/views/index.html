@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener Microservice | freeCodeCamp.org</title>
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <main>
+      <div>
+        <h3>Examples:</h3>
+        <a href="/api/shorturl">api/shorturl/</a><br/>
+        <a href="/api/shorturl/2">api/shorturl/2</a>
+      </div>
+      <section>
+        <form action="api/shorturl" method="POST">
+          <fieldset>
+            <legend>URL Shortener</legend>
+            <label for="url_input">URL:</label>
+            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
+            <input type="submit" value="POST URL" />
+          </fieldset>
+        </form>
+      </section>
+      <div>
+        <h3>Description</h3>
+        <p>
+          The title is a bit misleading because in this host this definitely won't be a shortener in all cases.
+          <br/>
+          To use it, input a link in the URL field, then click the button. A JSON object will be returned to your screen, and you can use the new generated short_url number and append it to siteurl/api/shorturl/.
+        </p>
+        <p>
+          If the url already exists in the database, it will return the JSON it did after creation, and will not redirect you upon this action.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>
+        This project has been written by <a href="https://github.com/d-0-t" target="_blank" rel="noreferrer"><b>d0t</b></a> for <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp.org</a>'s Back End course.
+      </p>
+    </footer>
+  </body>
+</html>
