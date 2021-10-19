@@ -1,6 +1,8 @@
 # My freeCodeCamp experience
 
-This repository is covering the freeCodeCamp projects.
+This repository is covering the freeCodeCamp projects. You can browse in these directories.
+#### Yes, each individual project has a detailed description!!! ;-)  
+I especially recommend the Quality Assurance projects, they are quite well written.
 
 ### Quality Assurance (backend + testing)
 - [[Demo]](https://replit.com/@d-0-t/Personal-Library) Personal Library
