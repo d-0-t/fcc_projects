@@ -17,14 +17,12 @@ html, body {
 
 #sampleui {
   max-width: 450px;
-  margin-left: 5%;
   flex: 1 1 0;
 }
 
 #sampleposting {
   max-width: 450px;
   text-align: center;
-  margin-left: 5%;
   flex: 1 1 0;
 }
 
