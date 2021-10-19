@@ -1,6 +1,6 @@
 # Metric/Imperial Converter
 
-Click here for the working [[DEMO]](https://replit.com/@d-0-t/MetricImperial-Converter) as well as the files/code I did not upload here (the ones fcc provided and I did no modifications whatsoever, but you can download the whole thing as a zip).
+Click here for the working [[DEMO]](https://replit.com/@d-0-t/MetricImperial-Converter) as well as the files/code.
 
 If you want to fork the project and try the tests on your own platform / computer, you'll have to add **NODE_ENV=test** to your replit secrets / .env file to enable them (it's in the sample.env but commented out because replit does not use env files).
 
@@ -36,3 +36,13 @@ I understand it'd be much better if we'd enforce the correct input by specialize
     
 ### Example return
     { initNum: 3.1, initUnit: 'mi', returnNum: 4.98895, returnUnit: 'km', string: '3.1 miles converts to 4.98895 kilometers' }
+    
+## My code
+- controllers/convertHandler.js
+- routes/api.js
+- tests/1_unit-tests.js
+- tests/2_functional-tests.js
+- public/style.css
+- views/index.html
+
+The rest was supplied by freeCodeCamp's boilerplate.
