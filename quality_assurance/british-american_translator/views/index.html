@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>American/British English Translator</title>
+	<meta name="description" content="An example for the fCC QA American/British English Translator project" />
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../public/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+</head>
+
+<body>
+  <center>
+	<header>
+		<h1>
+			American / British English Translator
+		</h1>
+	</header>
+	<hr style="margin: 25px" />
+	<div class="container">
+		<div class="form-container">
+			<textarea
+          rows="10"
+          cols="60"
+          id="text-input"
+        ></textarea>
+        <br />
+        <select id="locale-select">
+          <option value="american-to-british">American to British</option>
+          <option value="british-to-american">British to American</option>
+        </select>
+        <input type="button" value="Translate" id="translate-btn"/>
+      </div>
+      <div id="output-container">
+        <div id="solution-container">
+          <h3>Translated Sentence:</h3>
+          <hr>
+          <div id="translated-sentence"></div>
+          <div id="error-msg"></div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p><br/>
+      This project has been written by <a href="https://github.com/d-0-t" target="_blank" rel="noreferrer">d0t</a> for <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp.org</a>'s Back End course.
+    </p>
+  </div>
+  </center>
+  </body>
+  <script src="../public/index.js"></script>
+</html>

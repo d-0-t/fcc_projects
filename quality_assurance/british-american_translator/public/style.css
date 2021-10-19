@@ -1,0 +1,134 @@
+* {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 400;
+  background-color: #000;
+  color: rgb(231, 231, 231);
+}
+wrap {
+  position: absolute;
+  padding: 10px;
+  padding-top: 0;
+}
+code {
+  background: #555555;
+}
+#solution-container > hr {
+  border: 3px dotted rgb(121, 121, 121);
+  border-bottom: 0px;
+  width: 75%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.form-container {
+  max-width: 95%;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#user-stories {
+  font-size: 1.2em;
+}
+
+#output-container,
+#solution-container,
+#text-input,
+#locale-select,
+input[type="button"] {
+  font-size: 1.1em;
+}
+input[type="button"] {
+  border-radius: 5px;
+}
+input[type="button"]:hover {
+  border-radius: 5px;
+  background-color: rgb(29, 29, 29);
+}
+
+#output-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+#solution-container {
+  font-weight: 500;
+  border-radius: 15px;
+  background-color: #1d1d1d;
+  padding: 5px;
+  min-height: 150px;
+}
+#solution-container > h3 {
+  background-color: inherit;
+  margin: 0;
+  margin-bottom: -5px;
+  font-size: 1.12em;
+}
+
+#solution-container {
+  margin: 20px;
+}
+
+#translated-sentence {
+  margin-top: 10px;
+  font-weight: normal;
+  background-color: inherit;
+}
+
+#error-msg {
+  font-weight: normal;
+  color: rgb(255, 44, 44);
+  background-color: inherit;
+  text-shadow: 2px 2px #000;
+}
+
+.highlight {
+  font-weight: bold;
+  color: rgb(90, 221, 90);
+  background-color: inherit;
+}
+
+#text-input {
+  padding: 10px;
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .form-container {
+    align-self: flex-end;
+    flex: 1 1 0;
+    margin-left: 15px;
+  }
+
+  #output-container {
+    flex-direction: row;
+    margin-top: 0;
+    margin-left: 20px;
+    flex: 1 1 0;
+  }
+
+  #solution-container {
+    width: 75%;
+    margin-top: 0px;
+    flex: 1 1 0;
+  }
+  
+}
+
+a {
+  color: rgb(88, 160, 85);
+}
