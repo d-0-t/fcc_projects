@@ -1,9 +1,11 @@
-# fcc_projects
+# My freeCodeCamp experience
 
 This repository is covering the freeCodeCamp projects.
 
 ### Quality Assurance (backend + testing)
 
+- [[DEMO]](https://replit.com/@d-0-t/Issue-Tracker) Issue Tracker
+- [[DEMO]](https://replit.com/@d-0-t/American-British-Translator) British-American Translator
 - [[DEMO]](https://replit.com/@d-0-t/MetricImperial-Converter) Metric/Imperial Converter
 
 ### BackEnd
