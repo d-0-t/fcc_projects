@@ -36,11 +36,34 @@ The rest was supplied by the fcc boilerplate.
 ### Problem solving - 2_functional-tests.js
 - Two of the paths for testing had to be secret for security reasons (paths are stored in .env), to ensure the tests don't fail
 - Test / mongodb async issues
-  - The testing does not work well with mongo. Syncing attempts failed.
+  - The testing does not work well with mongo, but even if synced, there can be other issues.
     - The save() function checks for document version and throws an error upon the inhumanly fast PUT request in the test.
     - The alternative update() function which disregards the version still failed because mongo's auto-generated ID can't be removed from the acquired object, and update() refuses to push ID.
-    - This issue obviously does not affect normal use.
-  - To fix this I set up a different path for PUT requests with fixed IDs. 
+  - Partial syncing solution to enable the usage of an aquired `_id` is to turn the test into a returned promise like so (below), and acquire the needed information (`_id` in this case) for later use.
+  - This will require you to drop the "done()" function you got used to and use its "resolve()" counterpart in the new promise instead.
+```
+let idToDelete1;
+test('#1 Create an issue with every field: POST request to /api/issues/{project}', function () {
+  return new Promise(function (resolve) {
+  let input = {
+	issue_title: "Test 1",
+	...
+  };
+  chai
+	.request(server)
+	.post("/api/issues/test")
+	.set("content-type", "application/json")
+	.send(input)
+	.end( function (err,res) {
+	  if (err) {console.log(err)};
+	  assert.equal(res.status, 200);
+      ...
+	  idToDelete1 = res.body._id;
+	  resolve();
+	});
+  });
+});
+```
 - Getting the ID of some document to delete
   - Done with assigning id to a variable inside Promise.resolve() upon the test's first POST request.
   - The last section of tests will delete this entry from the database.
