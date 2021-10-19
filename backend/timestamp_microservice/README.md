@@ -15,6 +15,7 @@ Invalid inputs will return an error.
 ### Valid input:
 
 - Unix timestamps,
-- Strings that can be parsed by Date().-- NOTE: strings of numbers (20211005) will be treated as a single integer and considered a unix timestamp, and NOT a date (ambiguous data).
+- Strings that can be parsed by Date().
+  - NOTE: strings of numbers (20211005) will be treated as a single integer and considered a unix timestamp, and NOT a date (ambiguous data).
 
 This project has been written for freeCodeCamp's Back End course.
