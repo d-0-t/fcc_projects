@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Timestamp Microservice | freeCodeCamp.org</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+    <h1>Timestamp Microservice</h1>
+    <hr />
+    <div class="container">
+      <h3>Example Usage:</h3>
+      <ul id="examples">
+        <li><a href="api/2015-12-25">[project url]/api/2015-12-25</a></li>
+        <li><a href="api/1451001600000">[project url]/api/1451001600000</a></li>
+      </ul>
+
+      <h3>Example Output:</h3>
+      <p>
+        <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
+      </p>
+
+      <h3>Description</h3>
+      <p>
+        This is a timestamp service which converts valid date (or unix time) into unix and UTC strings, then returns it in JSON format.
+      </p>
+      <p>
+        <b>Usage / examples:</b>
+        <ul>
+          <li><code>"[url]/api"</code> will always return the current time,</li>
+          <li><code>"[url]/api/2015-04-20""</code> will return the corresponding time as shown in the example output above,</li>
+          <li>Invalid inputs will return an error.</li>
+        </ul>
+      </p>
+      <p>
+        <b>Valid input:</b>
+        <ul>
+          <li>Unix timestamps,</li>
+          <li>Strings that can be parsed by Date().</li>
+          <ul>
+            <li>NOTE: strings of numbers (<code>20211005</code>) will be treated as a single integer and considered a unix timestamp, and NOT a date (ambiguous data).</li>
+          </ul>
+        </ul>
+      </p>
+    </div>
+    <hr>
+    <div class="footer">
+      <p>
+        This project has been written by <a href="https://github.com/d-0-t" target="_blank" rel="noreferrer"><b>d0t</b></a> for <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp.org</a>'s Back End course.
+      </p>
+    </div>
+  </body>
+</html>
