@@ -1,0 +1,88 @@
+* {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+html, body {
+  background-color: #000;
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(26, 26, 26);
+}
+
+#sampleui {
+  max-width: 450px;
+  margin-left: 5%;
+  flex: 1 1 0;
+}
+
+#sampleposting {
+  max-width: 450px;
+  text-align: center;
+  margin-left: 5%;
+  flex: 1 1 0;
+}
+
+#userstories {
+  margin-left: 5%;
+}
+
+form {
+  padding: 5px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  height: 25px;
+}
+input, button {
+  background-color: rgb(10, 10, 10);
+}
+button {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.listWrapper, #detailComments {
+  text-align: left;
+}
+
+.pointer {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  color: rgb(84, 173, 80);
+}
+
+wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header {
+  margin-top: 20px;
+}
+hr {
+  width: 98%;
+  border: 3px dashed rgb(56, 83, 54);
+  border-bottom: 0;
+}

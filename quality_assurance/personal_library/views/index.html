@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>Personal Library</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/public/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+  <style>
+    code {
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+<body><center>
+<header>
+  <h1>Personal Library</h1>
+</header>
+<hr>
+<wrapper>
+<div id ='sampleposting'>
+  <h2>Test API responses</h2>
+  <form action="/api/books" method="post" class="border">
+    <h4>Test post to /api/books</h4>
+    <label for="title" >Book Title</label>
+    <input type="text" id="title" name="title" value=""><br>
+    <input type="submit" value="Submit">
+  </form>
+  <form action="" method="post" id="commentTest" class="border">
+    <h4>Test post to /api/books/{bookid}</h4>
+    <label for="idinputtest">BookId to comment on</label>
+    <input type="text" name="id" value="" id="idinputtest"><br>
+    <label for="comment">Comment</label>
+    <input type="text" id="comment" name="comment" value=""><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div id='sampleui'>
+  <h2>Sample Front-End</h2>
+  <form id="newBookForm" class="border">
+    <label for="bookTitleToAdd">New Book Title</label>
+    <input type="text" id="bookTitleToAdd" name="title" placeholder="Moby Dick" style="width: 295px">
+    <button type="submit" value="Submit" id="newBook">Submit New Book!</button>
+  </form>
+  <div id='display' class="pointer"></div>
+  <div id='bookDetail' class='border'>
+    <p id='detailTitle'>Select a book to see it's details and comments</p>
+    <ol id='detailComments'></ol>
+  </div>
+  <button id='deleteAllBooks'>Delete all books...</button>
+</div>
+</wrapper>
+<hr>
+<div id="footer">
+  <p><br/>
+  This project has been written by
+  <a href="https://github.com/d-0-t" target="_blank" rel="noreferrer">d0t</a> for <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp.org</a>'s Back End course.
+</p>
+</div>
+</center>
+
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"
+        integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+        crossorigin="anonymous"></script>
+<script src="/public/client.js"></script>
+<script>
+  /*
+  *  For #sampleposting to update form action url to test inputs book id
+  */
+  $(function() {
+    $('#commentTest').submit(function(){
+      let  id = $('#idinputtest').val();
+      $(this).attr('action', "/api/books/" + id);
+    });
+  });
+</script>
+</body>
+</html>
