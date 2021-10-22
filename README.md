@@ -5,6 +5,7 @@ This repository is covering the freeCodeCamp projects. You can browse in these d
 I especially recommend the Quality Assurance projects, they are quite well written.
 
 ### Quality Assurance (backend + testing)
+- [[Demo]](https://replit.com/@d-0-t/Sudoku-Solver) Sudoku Solver
 - [[Demo]](https://replit.com/@d-0-t/Personal-Library) Personal Library
 - [[Demo]](https://replit.com/@d-0-t/Issue-Tracker) Issue Tracker
 - [[Demo]](https://replit.com/@d-0-t/American-British-Translator) British-American Translator
