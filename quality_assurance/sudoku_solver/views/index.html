@@ -8,18 +8,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="../public/style.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
 </head>
 
 <body>
+  <center>
 	<header>
 		<h1>Sudoku Solver</h1>
 	</header>
+  <hr id="hr-head">
 	<div class="container">
 		<div class="form-container">
 			<form id="solve-form">
 				<textarea
-          rows="10"
-          cols="85"
+          rows="4"
+          cols="40"
           id="text-input"
           name="puzzle"
         ></textarea>
@@ -28,8 +31,10 @@
         <div id="error-msg"></div>
         </form>
         <form id="check-form">
-          <p>Coordinate (A1): <input id="coord" class="checker" type="text" name="coordinate"></p>
-          <p>Value (1-9): <input class="checker" type="text" id="val" name="value"></p>
+          <div id="checkfields">
+            <p>Coordinate (A1): <input id="coord" class="checker" type="text" name="coordinate"></p>
+            <p>Value (1-9): <input class="checker" type="text" id="val" name="value"></p>
+          </div>
           <input type="button" id="check-button" value="Check Placement">
         </form>
         <span id="error"></span>
@@ -81,7 +86,7 @@
               <td>9</td>
             </tr>
           </table>
-          <table class="grid">
+          <table id="sudokucells" class="grid">
             <tbody>
               <tr>
                 <td class="A1 sudoku-input" title="A1">
@@ -349,6 +354,13 @@
         </div>
       </div>
     </div>
+    <hr id="hr-foot">
+    <div id="footer">
+      This project has been written by
+      <a href="https://github.com/d-0-t" target="_blank" rel="noreferrer">d0t</a> for <a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp.org</a>'s Back End course.
+    </p>
+    </div>
+  </center>
   </body>
   <script type="module" src="../public/index.js"></script>
 </html>
