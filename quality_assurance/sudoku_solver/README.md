@@ -109,6 +109,7 @@ Although the brute force option is very much viable, one could still make the al
 - Make the beginning of solve() faster:
   - If only one value can go into a specific cell in a given area, fill it.
   - If the area has only one value missing, fill it.
+- Ditch the freeCodeCamp criterias and rewrite the whole program with a different set of, simpler, faster functions.
 
 ## My code, my files...
 - controllers/checkconflicts.js
