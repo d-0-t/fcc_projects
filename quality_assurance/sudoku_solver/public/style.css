@@ -1,19 +1,87 @@
+* {
+  color: rgb(236, 236, 236);
+}
+body, html {
+  background-color: #0f0c14;
+  font-size: 16px;
+  font-family: Montserrat;
+  margin: 15px;
+}
+h1 {
+  font-family: Montserrat;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 10px #515d69;
+}
 code {
-  background: #d0d0d5;
+  background: #19161d;
+  padding: 5px;
+}
+input {
+  background:rgb(21, 22, 27);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+input[type=button] {
+  font-weight: 700;
+  color: #c0cbd6;
+}
+input[type=text] {
+  font-weight: 700;
+  text-align: center;
+  width: 50px;
+  color: #ffffff;
 }
 
+#hr-head, #hr-foot {
+  width: 100%;
+  border: 3px dashed #515d69;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin: 15px;
+  margin-bottom: 23px;
+}
+#hr-foot {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#footer {
+  font-size: 14px;
+}
+#footer > a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #7c8894;
+}
+#checkfields {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#checkfields > p {
+  margin: 5px;
+}
+#coord, #val {
+  margin-left: 7px;
+}
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .form-container {
   max-width: 95%;
-  align-self: flex-start;
 }
 
 textarea {
   width: 100%;
+  background:rgb(21, 22, 27);
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px;
 }
 
 #user-stories {
@@ -29,7 +97,7 @@ textarea {
 #sudoku-grid-container {
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
+  margin-left: -50px;
 }
 
 #sudoku-grid {
@@ -40,11 +108,16 @@ textarea {
 .grid {
   border: 3px solid;
   border-spacing: 0;
+  
 }
 
 td {
   border: 1px solid;
   padding: 0.3em;
+}
+#sudokucells > tbody > tr > td {
+  background-color: #8EC5FC;
+  background-image: radial-gradient(#222c35 0%, #0f0c14 80%);
 }
 
 .yAxisLegend {
@@ -54,7 +127,7 @@ td {
 }
 
 .yAxisLegend tr td {
-  border: 1px solid rgba(0,0,0,0);
+  border: 1px solid rgba(0, 0, 0, 0);
   width: 2em;
   height: 1.95em;
 }
@@ -79,7 +152,7 @@ td {
 }
 
 .sudoku-input {
-  border: 1px solid black;
+  border: 1px solid rgb(80, 80, 80);
   width: 2em;
   height: 2em;
   text-align: center;
@@ -96,9 +169,25 @@ td {
 @media (min-width: 800px) {
   .container {
     flex-direction: row;
+    justify-content: center;
   }
 
   .form-container {
     align-self: center;
+  }
+  #sudoku-grid-container {
+    margin-left: 20px;
+  }
+  #hr-head {
+    margin-bottom: 5px;
+  }
+  #checkfields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #coord, #val {
+    margin-right: 30px;
   }
 }
