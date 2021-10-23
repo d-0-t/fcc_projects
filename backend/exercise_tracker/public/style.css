@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+background-color: rgb(25, 25, 68);
+}
 body {
   font-family:sans-serif;
   margin: 25px;
-  color: rgb(158, 158, 158);
-  background-color: #000000;
+  color: rgb(231, 231, 231);
+  height: 100%;
 }
 
 h1 {
@@ -21,12 +23,14 @@ p {
 form {
   margin-bottom: 25px;
   padding: 15px;
-  background-color: #87D37C;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, rgb(112, 173, 214) 0%, rgb(125, 130, 212) 100%);
   display: inline-block;
   width: 100%;
   max-width: 340px;
   border-radius: 5px;
-  color: #000000;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px rgb(90, 76, 129);
 }
 
 input {
@@ -35,7 +39,7 @@ input {
   padding: 5px;
   width: 100%;
   border: 1px solid lightgrey;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 16px;
 }
 
@@ -43,23 +47,26 @@ input[type=submit] {
   font-size: 16px;
   border-radius: 3px;
   background-color: #E4F1FE;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(45deg, rgb(181, 225, 255) 0%, rgb(204, 207, 255) 100%);
   border: 1px solid grey;
   box-shadow: 2px 2px #999;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 input[type=submit]:hover {
-  background-color: #FFFEC4;
+  background-color: rgb(255, 255, 255);
 }
 
 code {
   font-family: monospace;
   font-size: 1.2em;
-  background-color: rgb(53, 53, 53);
-  color: rgb(199, 199, 199);
+  background-color: rgb(76, 56, 107);
+  color: rgb(222, 244, 248);
   padding: 5px;
 }
 
 a {
-	color: rgb(75, 139, 73);
+	color: rgb(82, 163, 201);
 }
