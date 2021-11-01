@@ -1,0 +1,100 @@
+* {
+  color: white;
+  font-size: 16px;
+}
+html {
+  background-color: black;
+  font-family: "Gideon Roman";
+}
+
+input, textarea, select, button {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  background-color: black;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: darkred;
+}
+#rotfield {
+  height: 20px;
+}
+
+#pagetitle {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#logo {
+  filter: invert(50%);
+  width: 100px;
+}
+#pagetitle > h1 {
+  position: absolute;
+  font-size: 38px;
+  text-shadow: 2px 2px 5px rgb(145, 0, 0);
+  font-family: "Gideon Roman";
+  z-index: 1;
+}
+#description {
+  width: 300px;
+  padding-bottom: 10px;
+}
+#res {
+  padding: 10px;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#resultblock {
+  font-size: 18px;
+}
+
+#signature {
+  padding-top: 30px;
+  font-size: 20px;
+}
+#signature > a:hover {
+  color: rgb(255, 107, 107);
+  font-weight: bold;
+}
+
+
+
+
+
+/* vietnamese */
+@font-face {
+  font-family: 'Gideon Roman';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/gideonroman/v1/e3tmeuGrVOys8sxzZgWlmXoQc0nXkvc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Gideon Roman';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/gideonroman/v1/e3tmeuGrVOys8sxzZgWlmXoQcknXkvc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gideon Roman';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/gideonroman/v1/e3tmeuGrVOys8sxzZgWlmXoQfEnX.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
