@@ -14,3 +14,4 @@ I have also started making an interface for my [JS projects](https://github.com/
 
 - [[Demo]](https://codepen.io/d-o-t/full/OJgdYvr) Roman Numeral Converter
 - [[Demo]](https://codepen.io/d-o-t/pen/PoKJgxN) Caesar's Cipher
+- [[Demo]](https://codepen.io/d-o-t/full/Vwzdzee) Palindrome Checker
