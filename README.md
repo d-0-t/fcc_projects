@@ -28,11 +28,11 @@ I especially recommend the Quality Assurance projects, they are quite well writt
 - [[Demo]](https://codepen.io/d-o-t/full/oNwJqer) 25 + 5 Clock
 - [[Demo]](https://codepen.io/d-o-t/pen/PoKJgxN) Caesar's Cipher
 - [[Demo]](https://codepen.io/d-o-t/full/OJgdYvr) Roman Numeral Converter
+- [[Demo]](https://codepen.io/d-o-t/full/Vwzdzee) Palindrome Checker
 
 ### JavaScript (unit code only)
 
 - Cash Register
-- Palindrome Checker
 - Telephone Number Validator (US)
 
 ### Responsive Web Design
