@@ -7,3 +7,4 @@ The functionality of the demos might differ from the original task/project.
 
 - [[Demo]](https://codepen.io/d-o-t/full/OJgdYvr) Roman Numeral Converter
 - [[Demo]](https://codepen.io/d-o-t/pen/PoKJgxN) Caesar's Cipher
+- [[Demo]](https://codepen.io/d-o-t/full/Vwzdzee) Palindrome Checker
