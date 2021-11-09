@@ -27,12 +27,14 @@ I especially recommend the Quality Assurance projects, they are quite well writt
 - [[Demo]](https://codepen.io/d-o-t/full/OJgagZj) JavaScript Calculator
 - [[Demo]](https://codepen.io/d-o-t/full/oNwJqer) 25 + 5 Clock
 
+### JavaScript + FrontEnd
+- [[Demo]](https://codepen.io/d-o-t/pen/PoKJgxN) Caesar's Cipher
+- [[Demo]](https://codepen.io/d-o-t/full/OJgdYvr) Roman Numeral Converter
+
 ### JavaScript
 
-- [[Demo]](https://codepen.io/d-o-t/pen/PoKJgxN) Caesar's Cipher
 - Cash Register
 - Palindrome Checker
-- [[Demo]](https://codepen.io/d-o-t/full/OJgdYvr) Roman Numeral Converter
 - Telephone Number Validator (US)
 
 ### Responsive Web Design
