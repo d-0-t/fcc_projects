@@ -52,12 +52,7 @@ class Rectangle:
     
     # return how many times another shape fits into the instance of this one
     def get_amount_inside(self,shape):
-        sw = shape.width
-        sh = shape.height
-        if self.width >= sw and self.height >= sh:
-            return math.floor(self.width / sw) * math.floor(self.height / sh)
-        else:
-            return 0
+        return math.floor(self.width / shape.width) * math.floor(self.height / shape.height)
 
 class Square(Rectangle):
     def __init__(self, side_length:int):
