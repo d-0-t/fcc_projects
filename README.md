@@ -13,7 +13,6 @@ I especially recommend the Quality Assurance projects, they are quite well writt
   - Tower of Hanoi Algorithm
 - Other Lab:
   - Linked List
-  - Hash Table
   - Binary Search
   - Finding Square Root With The Bisection Method
 
