@@ -14,7 +14,9 @@ I especially recommend the Quality Assurance projects, they are quite well writt
 - Other Lab:
   - Linked List
   - Binary Search
-  - Finding Square Root With The Bisection Method
+  - Finding Square Root (Bisection Method)
+  - Quick Sort, Exchange Sort, Select Sort
+  - Verify Card Number (Luhn Algorithm)
 
 ### Relational Database (SQL + Bash + Git) [[code]](https://github.com/d-0-t/fcc_projects/tree/main/sql)
 - Celestial Bodies Database
