@@ -5,11 +5,17 @@ This repository is covering the freeCodeCamp projects. You can browse in these d
 I especially recommend the Quality Assurance projects, they are quite well written.
 
 ### Python [[code]](https://github.com/d-0-t/fcc_projects/tree/main/python)
-- User Configuration Manager
-- Budget App
-- Polygon Area Calculator
-- Hash Table
-- Tower of Hanoi Algorithm
+- Certification projects:
+  - User Configuration Manager
+  - Budget App
+  - Polygon Area Calculator
+  - Hash Table
+  - Tower of Hanoi Algorithm
+- Other Lab:
+  - Linked List
+  - Hash Table
+  - Binary Search
+  - Finding Square Root With The Bisection Method
 
 ### Relational Database (SQL + Bash + Git) [[code]](https://github.com/d-0-t/fcc_projects/tree/main/sql)
 - Celestial Bodies Database
